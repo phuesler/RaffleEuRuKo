@@ -8,7 +8,7 @@ class RaffleTest < Test::Unit::TestCase
   end
   
   def test_is_running
-    raffle = Raffle.new([1],null_object)
+    raffle = Raffle.new([1], delegate: nil, numberOfRuns: 1)
     raffle.raffle
     assert(true, raffle.running?)
     while(raffle.running?)
@@ -17,16 +17,14 @@ class RaffleTest < Test::Unit::TestCase
   end
   
   def test_is_not_running
-    raffle = Raffle.new([1],null_object)
+    raffle = Raffle.new([1], delegate: nil, numberOfRuns: 1)
     assert_equal(false,raffle.running?)
   end
   
   def test_call_delegate_methods
     @delegate.expect :updateName,nil,[1]
-    @delegate.expect :updateName,nil,[2]
-    @delegate.expect :updateName,nil,[3]
     
-    raffle = Raffle.new([1,2,3],@delegate)
+    raffle = Raffle.new([1],delegate: @delegate, numberOfRuns: 1)
     raffle.raffle
     #we have to wait until raffle has finished running in another thread
     while(raffle.running?)
