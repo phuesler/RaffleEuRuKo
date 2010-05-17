@@ -46,6 +46,7 @@
 		035B58A611A1B33E007FFB7B /* ApplicationController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 035B58A511A1B33E007FFB7B /* ApplicationController.rb */; };
 		035B591611A1D7DC007FFB7B /* RaffleView.rb in Resources */ = {isa = PBXBuildFile; fileRef = 035B591511A1D7DC007FFB7B /* RaffleView.rb */; };
 		035B593C11A1D932007FFB7B /* Raffle.rb in Resources */ = {isa = PBXBuildFile; fileRef = 035B593B11A1D932007FFB7B /* Raffle.rb */; };
+		035B5A3111A1F8FF007FFB7B /* test_helper.rb in Resources */ = {isa = PBXBuildFile; fileRef = 035B5A3011A1F8FF007FFB7B /* test_helper.rb */; };
 		2BFA9DA710CDF852007972A1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BFA9DA510CDF852007972A1 /* MainMenu.xib */; };
 		4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */; };
 		4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE3BE130D8651D900ECA448 /* MacRuby.framework */; };
@@ -70,6 +71,7 @@
 		035B58A511A1B33E007FFB7B /* ApplicationController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ApplicationController.rb; sourceTree = "<group>"; };
 		035B591511A1D7DC007FFB7B /* RaffleView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = RaffleView.rb; sourceTree = "<group>"; };
 		035B593B11A1D932007FFB7B /* Raffle.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = Raffle.rb; sourceTree = "<group>"; };
+		035B5A3011A1F8FF007FFB7B /* test_helper.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = test_helper.rb; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
@@ -132,6 +134,7 @@
 			children = (
 				172754D5107598EA00D0347B /* raffle_test.rb */,
 				17D55CD81076A1A2008207BD /* run_suite.rb */,
+				035B5A3011A1F8FF007FFB7B /* test_helper.rb */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				035B58A611A1B33E007FFB7B /* ApplicationController.rb in Resources */,
 				035B591611A1D7DC007FFB7B /* RaffleView.rb in Resources */,
 				035B593C11A1D932007FFB7B /* Raffle.rb in Resources */,
+				035B5A3111A1F8FF007FFB7B /* test_helper.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

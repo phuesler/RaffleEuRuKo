@@ -1,14 +1,8 @@
 require 'test/unit'
- require 'minitest/mock'
+require 'minitest/mock'
+require 'Tests/test_helper'
 
 require 'Raffle'
-
-def null_object
-  c = Class.new
-  def c.method_missing(m, *args, &block)
-  end
-  c
-end
 
 class RaffleTest < Test::Unit::TestCase
   def setup
