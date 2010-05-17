@@ -1,8 +1,9 @@
 class Test::Unit::TestCase
-  def null_object
-    c = Class.new
-    def c.method_missing(m, *args, &block)
+  class NullObject
+    def method_missing(m, *args, &block)
     end
-    c
+  end
+  def null_object
+    @default_null_object ||= NullObject.new
   end
 end
