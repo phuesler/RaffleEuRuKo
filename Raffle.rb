@@ -2,6 +2,7 @@ class Raffle
   def initialize(values,delegate)
     @values = values
     @delegate = delegate
+    @running = false
   end
   
   def raffle
