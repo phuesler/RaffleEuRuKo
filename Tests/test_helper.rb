@@ -1,3 +1,6 @@
+require 'test/unit'
+require 'minitest/mock'
+
 class Test::Unit::TestCase
   class NullObject
     def method_missing(m, *args, &block)

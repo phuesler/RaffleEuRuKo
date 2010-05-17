@@ -1,5 +1,3 @@
-require 'test/unit'
-require 'minitest/mock'
 require 'Tests/test_helper'
 
 require 'Raffle'
